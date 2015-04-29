@@ -6,13 +6,13 @@ $(document).ready(function(){
 		input = prompt('What should I count to?');
 			for (var i = 1; i <= input; i++) {
 				if (i % 3 === 0 && i % 5 === 0) {
-					document.write('FizzBuzz');
+					$('.output').append('FizzBuzz, ');
 				} else if (i % 3 === 0) {
-					document.write('Fizz');
+					$('.output').append('Fizz, ');
 				} else if (i % 5 === 0) {
-					document.write('Buzz');
+					$('.output').append('Buzz, ');
 				} else {
-					document.write(i);
+					$('.output').append(i + ", ");
 				}
 			}
 	});
